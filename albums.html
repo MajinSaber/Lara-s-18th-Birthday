@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lara's Photo Album</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<section class="albums-page">
+
+<div class="return-container">
+    <a href="main.html#albums" class="btn-return">← Return to Albums</a>
+</div>
+
+<h2>Lara's Photo Album</h2>
+
+<div class="albums-container">
+    <div class="albums-grid">
+
+        <img src="Photos/Lara1.jpg" alt="">
+        <img src="Photos/Lara2.jpg" alt="">
+        <img src="Photos/Lara3.jpg" alt="">
+        <img src="Photos/Lara4.jpg" alt="">
+        <img src="Photos/Lara5.jpg" alt="">
+        <img src="Photos/Lara6.jpg" alt="">
+        <img src="Photos/Lara7.jpg" alt="">
+        <img src="Photos/Lara8.jpg" alt="">
+        <img src="Photos/Lara9.jpg" alt="">
+        <img src="Photos/Lara10.jpg" alt="">
+        <img src="Photos/Lara11.jpg" alt="">
+        <img src="Photos/Lara12.jpg" alt="">
+        <img src="Photos/Lara13.jpg" alt="">
+        <img src="Photos/Lara14.jpg" alt="">    
+        <img src="Photos/Lara15.jpg" alt="">
+        <img src="Photos/Lara16.jpg" alt="">
+        <img src="Photos/Lara17.jpg" alt="">
+        <img src="Photos/Lara18.jpg" alt="">
+        <img src="Photos/Lara19.jpg" alt="">
+        <img src="Photos/Lara20.jpg" alt="">
+
+    </div>
+</div>
+
+</section>
+
+
+<footer>
+    <p>&copy; 2026 Lara's 18th Birthday Celebration</p>
+</footer>
+
+<!-- Lightbox Overlay -->
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" src="" alt="">
+</div>
+
+<script>
+function toggleMenu(){
+    document.getElementById("navLinks").classList.toggle("show");
+}
+</script>
+
+<script>
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.querySelector('.lightbox-img');
+const closeBtn = document.querySelector('.lightbox .close');
+
+// enlarge when photo clicked
+document.querySelectorAll('.albums-grid img').forEach(img => {
+    img.addEventListener('click', () => {
+        lightbox.style.display = 'flex';
+        lightboxImg.src = img.src;
+    });
+});
+
+// Close bttn
+closeBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+});
+
+// Close when outside clicked
+lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+        lightbox.style.display = 'none';
+    }
+});
+</script>
+
+</body>
+</html>

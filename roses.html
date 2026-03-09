@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>18 Roses</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="roses">
+<div class="container">
+  <h1>18 Roses</h1>
+  <div class="participants">
+
+    <div class="card"><span>1.</span> Papa Jhun Tucay</div>
+    <div class="card"><span>2.</span> Mamay Romeo Linatoc</div>
+    <div class="card"><span>3.</span> Mamay Sonny Lanto</div>
+    <div class="card"><span>4.</span> Mamay Domeng Lanto</div>
+    <div class="card"><span>5.</span> Daddy Jose Carlito Tucay</div>
+    <div class="card"><span>6.</span> Tito Arnold Tucay</div>
+    <div class="card"><span>7.</span> Tito Allan Linatoc</div>
+    <div class="card"><span>8.</span> John Romel Linatoc</div>
+    <div class="card"><span>9.</span> Lance Nadorres</div>
+    <div class="card"><span>10.</span> John Fierre Linatoc</div>
+    <div class="card"><span>11.</span> Cyrus Lojo</div>
+    <div class="card"><span>12.</span> Aaron Andrade</div>
+    <div class="card"><span>13.</span> Ckier Magdangan</div>
+    <div class="card"><span>14.</span> Jeric Gutierrez</div>
+    <div class="card"><span>15.</span> John Leondro Tapalla</div>
+    <div class="card"><span>16.</span> Axel Maranan</div>
+    <div class="card"><span>17.</span> Gian Carlo Vasquez</div>
+    <div class="card"><span>18.</span> Kuya Alexander James Tucay</div>
+
+  </div>
+</div>
+
+<div class="nav-footer">
+    <button class="nav-btn" onclick="goBack()">&#60;</button>
+
+    <a href="main.html#participants" class="nav-return">Return</a>
+
+    <button class="nav-btn" onclick="goNext()">&#62;</button>
+</div>
+<script>
+const pages = [
+    "roses.html",
+    "bills.html",
+    "cosmetics.html",
+    "gifts.html",
+    "messages.html",
+    "wishes.html",
+    "shots.html",
+    "footware.html",
+    "chocolates.html"
+];
+
+const currentIndex = 0;
+
+function goBack() {
+    if (currentIndex > 0) {
+        window.location.href = pages[currentIndex - 1];
+    }
+}
+
+function goNext() {
+    if (currentIndex < pages.length - 1) {
+        window.location.href = pages[currentIndex + 1];
+    }
+}
+</script>
+
+</body>
+</html>

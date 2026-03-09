@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>18 Messages</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="roses">
+<div class="container">
+  <h1>18 Treasure</h1>
+  <div class="participants">
+
+    <div class="card"><span>1.</span> Jasmine Estole</div>
+<div class="card"><span>2.</span> Josh Silva</div>
+<div class="card"><span>3.</span> Caezar Manigbas</div>
+<div class="card"><span>4.</span> John Nhel Sotto</div>
+<div class="card"><span>5.</span> Sandyrain Amparo</div>
+<div class="card"><span>6.</span> Maria Rianna Formon</div>
+<div class="card"><span>7.</span> Cielo Dimaculangan</div>
+<div class="card"><span>8.</span> Jr Callingasan</div>
+<div class="card"><span>9.</span> Ryzen Karl Maralit</div>
+<div class="card"><span>10.</span> Princess Manalo</div>
+<div class="card"><span>11.</span> Jhonmar Vidal</div>
+<div class="card"><span>12.</span> Mickaela Gwyneth Evangelista</div>
+<div class="card"><span>13.</span> Eunice Linatoc</div>
+<div class="card"><span>14.</span> Daniel Dela Cruz</div>
+<div class="card"><span>15.</span> Alfred Gian Cayetano</div>
+<div class="card"><span>16.</span> Janzen Conrad Tibayan</div>
+<div class="card"><span>17.</span> Anthony Gabriel Lopez</div>
+<div class="card"><span>18.</span> Ate April Ruth Linatoc</div>
+
+  </div>
+</div>
+
+<div class="nav-footer">
+    <button class="nav-btn" onclick="goBack()">&#60;</button>
+
+    <a href="main.html#participants" class="nav-return">Return</a>
+
+    <button class="nav-btn" onclick="goNext()">&#62;</button>
+</div>
+<script>
+const pages = [
+    "roses.html",
+    "bills.html",
+    "cosmetics.html",
+    "gifts.html",
+    "messages.html",
+    "wishes.html",
+    "shots.html",
+    "footware.html",
+    "chocolates.html"
+];
+
+const currentIndex = 4;
+
+function goBack() {
+    if (currentIndex > 0) {
+        window.location.href = pages[currentIndex - 1];
+    }
+}
+
+function goNext() {
+    if (currentIndex < pages.length - 1) {
+        window.location.href = pages[currentIndex + 1];
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>18 Shots</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="roses">
+<div class="container">
+  <h1>18 Shots</h1>
+  <div class="participants">
+
+<div class="card"><span>1.</span> Keith Ann Magtaas</div>
+<div class="card"><span>2.</span> Angel Carlo Kalaw</div>
+<div class="card"><span>3.</span> Aldred Linatoc</div>
+<div class="card"><span>4.</span> Daniel Linatoc</div>
+<div class="card"><span>5.</span> Gio Pusag</div>
+<div class="card"><span>6.</span> Frenoldval Ducay</div>
+<div class="card"><span>7.</span> Jared Kean Escalera</div>
+<div class="card"><span>8.</span> Cedrick Pasahol</div>
+<div class="card"><span>9.</span> Jerome Lanto</div>
+<div class="card"><span>10.</span> Jasper Mission</div>
+<div class="card"><span>11.</span> Kevin Comia</div>
+<div class="card"><span>12.</span> Francis Gabriel Dubria</div>
+<div class="card"><span>13.</span> Drunjet Leynes</div>
+<div class="card"><span>14.</span> Reyniel Robles</div>
+<div class="card"><span>15.</span> Ahron Gabriel Carpio</div>
+<div class="card"><span>16.</span> Lemuel Caringal</div>
+<div class="card"><span>17.</span> Harold Kenn Garcis</div>
+<div class="card"><span>18.</span> Kiel Aaron Asilo</div>
+
+  </div>
+</div>
+
+<div class="nav-footer">
+    <button class="nav-btn" onclick="goBack()">&#60;</button>
+
+    <a href="main.html#participants" class="nav-return">Return</a>
+
+    <button class="nav-btn" onclick="goNext()">&#62;</button>
+</div>
+<script>
+const pages = [
+    "roses.html",
+    "bills.html",
+    "cosmetics.html",
+    "gifts.html",
+    "messages.html",
+    "wishes.html",
+    "footware.html",
+    "chocolates.html"
+];
+
+const currentIndex = 6;
+
+function goBack() {
+    if (currentIndex > 0) {
+        window.location.href = pages[currentIndex - 1];
+    }
+}
+
+function goNext() {
+    if (currentIndex < pages.length - 1) {
+        window.location.href = pages[currentIndex + 1];
+    }
+}
+</script>
+
+</body>
+</html>

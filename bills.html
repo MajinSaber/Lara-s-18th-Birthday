@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>18 Bills</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="roses">
+
+    
+<div class="container">
+  <h1>18 Bills</h1>
+  <div class="participants">
+
+    <div class="card"><span>1.</span> Ate Hannah Mañibo</div>
+    <div class="card"><span>2.</span> Ate Mara Cortez</div>
+    <div class="card"><span>3.</span> Ate Analyn</div>
+    <div class="card"><span>4.</span> Kuya Vince Adrian Tucay</div>
+    <div class="card"><span>5.</span> Kuya Bernie Cortez</div>
+    <div class="card"><span>6.</span> Ninang Eden Brocales</div>
+    <div class="card"><span>7.</span> Ninong Jr Brocales</div>
+    <div class="card"><span>8.</span> Ninong Joel Mañibo</div>
+    <div class="card"><span>9.</span> Ninong Jhun Pusag</div>
+    <div class="card"><span>10.</span> Ninang Cpie Mahaguay</div>
+    <div class="card"><span>11.</span> Tita Maricris Tucay</div>
+    <div class="card"><span>12.</span> Tita Joan Galon</div>
+    <div class="card"><span>13.</span> Tita Beng Sulfecencia</div>
+    <div class="card"><span>14.</span> Tita Claire Mojica</div>
+    <div class="card"><span>15.</span> Tito Andy Linatoc</div>
+    <div class="card"><span>16.</span> Tito Jessie Linatoc</div>
+    <div class="card"><span>17.</span> Tito Reysan Lanto</div>
+    <div class="card"><span>18.</span> Daddy Jhun Nadorres</div>
+
+  </div>
+</div>
+
+<div class="nav-footer">
+    <button class="nav-btn" onclick="goBack()">&#60;</button>
+
+    <a href="main.html#participants" class="nav-return">Return</a>
+
+    <button class="nav-btn" onclick="goNext()">&#62;</button>
+</div>
+<script>
+const pages = [
+    "roses.html",
+    "bills.html",
+    "cosmetics.html",
+    "gifts.html",
+    "messages.html",
+    "wishes.html",
+    "shots.html",
+    "footware.html",
+    "chocolates.html"
+];
+
+const currentIndex = 1;
+
+function goBack() {
+    if (currentIndex > 0) {
+        window.location.href = pages[currentIndex - 1];
+    }
+}
+
+function goNext() {
+    if (currentIndex < pages.length - 1) {
+        window.location.href = pages[currentIndex + 1];
+    }
+}
+</script>
+
+</body>
+</html>

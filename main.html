@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lara's 18th Birthday Invitation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="nav-container">
+
+        <div class="logo">Lara's 18th</div>
+
+        <div class="burger" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#program">Program</a>
+
+            <div class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn" onclick="toggleDropdown()">Participants ▾</a>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="roses.html">18 Roses</a>
+                    <a href="bills.html">18 Bills</a>
+                    <a href="cosmetics.html">18 Cosmetics</a>
+                    <a href="gifts.html">18 Gifts</a>
+                    <a href="messages.html">18 Treasures</a>
+                    <a href="wishes.html">18 Candles</a>
+                    <a href="shots.html">18 Shots</a>
+                    <a href="footware.html">18 Footwares</a>
+                    <a href="chocolates.html">18 Chocolates</a>
+                </div>
+            </div>
+
+            <a href="#albums">Photo Albums</a>
+
+            <a href="#place">Place</a>
+        </div>
+
+    </div>
+</nav>
+
+<header id="home">
+    <div class="overlay">
+        <div class="card hero-card">
+            <p class="invite-text">Join us to celebrate</p>
+            <h1>Lara's</h1>
+            <div class="age-badge">18th Birthday</div>
+
+            <div class="profile-frame">
+                <img src="Photos/Lara4.jpg" alt="Lara's Photo" class="profile-pic">
+            </div>
+
+            <div class="event-details">
+                <p><strong>22 March, 2026 | 4:00 PM</strong></p>
+                <p>Linatoc's Residence</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="program">
+    <h2>Birthday Program</h2>
+    <div class="card">
+        <ul class="program-list">
+            <li><span>2:00 PM</span> Arrival of Guests</li>
+            <li><span>2:20 PM</span> Dubutante Entrance</li>
+            <li><span>2:30 PM</span> Speeche of the parents</li>
+            <li><span>3:00 PM</span> 18 Ceremony & Dinner</li>
+            <li><span>6:00 PM</span> End</li>
+        </ul>
+    </div>
+</section>
+
+<section id="participants">
+    <h2>Participants</h2>
+    <div class="card">
+        <div class="button-grid">
+            <a href="roses.html" class="btn-participant">18 Roses</a>
+            <a href="bills.html" class="btn-participant">18 Bills</a>
+            <a href="cosmetics.html" class="btn-participant">18 Cosmetics</a>
+            <a href="gifts.html" class="btn-participant">18 Gifts</a>
+            <a href="messages.html" class="btn-participant">18 Treasures</a>
+            <a href="wishes.html" class="btn-participant">18 Candles</a>
+            <a href="wishes.html" class="btn-participant">18 Shots</a>
+            <a href="wishes.html" class="btn-participant">18 Footwares</a>
+            <a href="chocolates.html" class="btn-participant">18 Chocolates</a>
+        </div>
+    </div>
+</section>
+
+<section id="albums">
+    <h2>Photo Albums</h2>
+    <div class="card">
+
+        <div class="album-preview">
+            <img src="Photos/Lara1.jpg" alt="">
+            <img src="Photos/Lara2.jpg" alt="">
+            <img src="Photos/Lara3.jpg" alt="">
+            <img src="Photos/Lara4.jpg" alt="">
+        </div>
+
+        <div class="album-button">
+            <a href="albums.html" class="btn-view-more">View More</a>
+        </div>
+    </div>
+</section>
+
+<section id="place">
+    <h2>The Place</h2>
+    <div class="card">
+        <h3>Linatoc's Residence</h3>
+        <p>627-A Pansol Patik, Padre Garcia, Batangas</p>
+        <p><em>(Landmark: Chenard Resort)</em></p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Lara's 18th Birthday Celebration</p>
+</footer>
+
+<script>
+function toggleDropdown() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        let dropdowns = document.getElementsByClassName("dropdown-content");
+        for (let i = 0; i < dropdowns.length; i++) {
+            dropdowns[i].classList.remove('show');
+        }
+    }
+}
+
+function toggleMenu(){
+    document.getElementById("navLinks").classList.toggle("show");
+}
+
+</script>
+
+</body>
+</html>

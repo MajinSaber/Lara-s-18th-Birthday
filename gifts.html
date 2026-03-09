@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>18 Gifts</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="roses">
+<div class="container">
+  <h1>18 Gifts</h1>
+  <div class="participants">
+
+    <div class="card"><span>1.</span> Via Mahaguay</div>
+<div class="card"><span>2.</span> Princess Elizalde</div>
+<div class="card"><span>3.</span> Joseph Niño Padilla</div>
+<div class="card"><span>4.</span> Chris Mathew Maranan</div>
+<div class="card"><span>5.</span> Kaiser Rosita</div>
+<div class="card"><span>6.</span> Alexa Julia Javier</div>
+<div class="card"><span>7.</span> Denise Estole</div>
+<div class="card"><span>8.</span> Jefferson Laririt</div>
+<div class="card"><span>9.</span> Dervin Jhed Atienza</div>
+<div class="card"><span>10.</span> Franzl Navaja</div>
+<div class="card"><span>11.</span> Roge Gabriel Solares</div>
+<div class="card"><span>12.</span> Tyron Beniza</div>
+<div class="card"><span>13.</span> Ralp Vincent Lantin</div>
+<div class="card"><span>14.</span> Maxxine Nicole Mangundayaoj</div>
+<div class="card"><span>15.</span> Tita Vilma Linatoc</div>
+<div class="card"><span>16.</span> Tita Janeth Mission</div>
+<div class="card"><span>17.</span> Tita Rhea Pulido</div>
+<div class="card"><span>18.</span> Ate Shery Maralit Reyes</div>
+
+  </div>
+</div>
+
+<div class="nav-footer">
+    <button class="nav-btn" onclick="goBack()">&#60;</button>
+
+    <a href="main.html#participants" class="nav-return">Return</a>
+
+    <button class="nav-btn" onclick="goNext()">&#62;</button>
+</div>
+<script>
+const pages = [
+    "roses.html",
+    "bills.html",
+    "cosmetics.html",
+    "gifts.html",
+    "messages.html",
+    "wishes.html",
+    "shots.html",
+    "footware.html",
+    "chocolates.html"
+];
+
+const currentIndex = 3;
+
+function goBack() {
+    if (currentIndex > 0) {
+        window.location.href = pages[currentIndex - 1];
+    }
+}
+
+function goNext() {
+    if (currentIndex < pages.length - 1) {
+        window.location.href = pages[currentIndex + 1];
+    }
+}
+</script>
+
+</body>
+</html>
