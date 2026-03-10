@@ -288,6 +288,24 @@ header{
     font-size: 0.95rem;
 }
 
+.dress-code-colors{
+    display:flex;
+    justify-content:center;
+    margin:10px 0;
+}
+
+.dress-code-colors .color{
+    width:40px;
+    height:40px;
+}
+
+.c1{ background:#e4e4e4; }
+.c2{ background:#e8b0af; }
+.c3{ background:#e87c7c; }
+.c4{ background:#e56b6f; }
+.c5{ background:#e63946; }
+.c6{ background:#ff0000; }
+
 /* SECTIONS */
 section {
     padding: 60px 15px;
